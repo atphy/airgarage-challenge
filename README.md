@@ -13,6 +13,10 @@ pipenv install
 python manage.py runserver
 ```
 
+Open the project in your code editor and find ```agserver/agserverapi/config.example.py```
+
+Enter your API key and save the file as ```config.py```
+
 Navigate into ```airgarage-client```
 
 Run:
