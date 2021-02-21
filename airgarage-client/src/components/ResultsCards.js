@@ -11,7 +11,7 @@ export const ResultsCards = (props) => {
     return <>
         <div>
         <h1>{props.result.name}</h1>
-        <img src={props.result.image_url} />
+        <img src={props.result.image_url} style={{width: "300px", height: "200px"}} alt={props.result.name} />
         <p>{props.result.location.address1}</p>
         <p>{props.result.location.address2}</p>
         <p>{props.result.location.address3}</p>
