@@ -14,6 +14,7 @@ python manage.py runserver
 ```
 
 Navigate into ```airgarage-client```
+
 Run:
 ```
 npm install
