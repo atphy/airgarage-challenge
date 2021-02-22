@@ -8,10 +8,12 @@ export const ResultsCards = (props) => {
         return ((props.result.review_count * props.result.rating) / (props.result.review_count + 1))
     }
 
+    const noResultImage = "https://via.placeholder.com/300x200.png?text=No+image+available"
+
     return <>
         <div>
         <h1>{props.result.name}</h1>
-        <img src={props.result.image_url} style={{width: "300px", height: "200px"}} alt={props.result.name} />
+        <img src={props.result.image_url ? props.result.image_url : noResultImage} style={{width: "300px", height: "200px"}} alt={props.result.name} />
         <p>{props.result.location.address1}</p>
         <p>{props.result.location.address2}</p>
         <p>{props.result.location.address3}</p>
