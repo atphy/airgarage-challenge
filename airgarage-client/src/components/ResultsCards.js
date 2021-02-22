@@ -21,7 +21,7 @@ export const ResultsCards = (props) => {
         <p>{props.result.rating}</p>
         <p>{props.result.review_count} total reviews</p>
         <a href={props.result.url}>Yelp Page</a>
-        <p>{score()}</p>
+        <p>AirGarage score: {score()}</p>
         </div>
     </>;
 };
