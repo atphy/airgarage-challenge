@@ -12,16 +12,16 @@ export const ResultsCards = (props) => {
 
     return <>
         <div>
-        <h1>{props.result.name}</h1>
-        <img src={props.result.image_url ? props.result.image_url : noResultImage} style={{width: "300px", height: "200px"}} alt={props.result.name} />
-        <p>{props.result.location.address1}</p>
-        <p>{props.result.location.address2}</p>
-        <p>{props.result.location.address3}</p>
-        <p>{props.result.location.city}, {props.result.location.state} {props.result.location.zip_code}</p>
-        <p>{props.result.rating}</p>
-        <p>{props.result.review_count} total reviews</p>
-        <a href={props.result.url}>Yelp Page</a>
-        <p>AirGarage score: {score()}</p>
+            <h1>{props.result.name}</h1>
+            <img src={props.result.image_url ? props.result.image_url : noResultImage} style={{width: "300px", height: "200px"}} alt={props.result.name} />
+            <p>{props.result.location.address1}</p>
+            <p>{props.result.location.address2}</p>
+            <p>{props.result.location.address3}</p>
+            <p>{props.result.location.city}, {props.result.location.state} {props.result.location.zip_code}</p>
+            <p>Yelp score: {props.result.rating} out of 5</p>
+            <p>{props.result.review_count} total reviews</p>
+            <a href={props.result.url}>Yelp Page</a>
+            <p>AirGarage score: {score()} out of 5</p>
         </div>
     </>;
 };
