@@ -12,7 +12,7 @@ export const CitySearch = (props) => {
     }
 
     return <>
-        <h1>Show me the worst parking lots in</h1>
+        <h1>Show me the 50 worst parking lots in</h1>
         <form>
             <input onChange={event => setLocation(event.target.value)} placeholder="City" type="text"></input>
             <button onClick={handleSearch}></button>
